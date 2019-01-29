@@ -36,6 +36,7 @@
     "lint:eslint": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts",
     "lint:eslint:fix": "eslint --ignore-path .gitignore --ignore-pattern internals/scripts --fix",
     "lint:js": "npm run lint:eslint -- . ",
+    // ZF: see next line
     "lint:staged": "lint-staged",
     "pretest": "npm run test:clean && npm run lint",
     "test:clean": "rimraf ./coverage",
@@ -44,6 +45,7 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "prettify": "prettier --write"
   },
+  // ZF: see next line
   "lint-staged": {
     "*.js": [
       "npm run lint:eslint:fix",
@@ -136,12 +138,14 @@
     "imports-loader": "0.8.0",
     "jest-cli": "23.6.0",
     "jest-styled-components": "6.2.2",
+    // ZF see next line
     "lint-staged": "7.3.0",
     "ngrok": "3.1.0",
     "node-plop": "0.16.0",
     "null-loader": "0.1.1",
     "offline-plugin": "5.0.5",
     "plop": "2.1.0",
+    // ZF see next line
     "pre-commit": "1.2.2",
     "prettier": "1.14.3",
     "react-app-polyfill": "0.1.3",
