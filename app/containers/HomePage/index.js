@@ -11,6 +11,7 @@ import { FormattedMessage } from 'react-intl';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { createStructuredSelector } from 'reselect';
+import SwaggerWrapper from 'containers/SwaggerWrapper';
 
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
@@ -62,6 +63,7 @@ export class HomePage extends React.PureComponent {
           />
         </Helmet>
         <div>
+          <SwaggerWrapper />
           <CenteredSection>
             <H2>
               <FormattedMessage {...messages.startProjectHeader} />
