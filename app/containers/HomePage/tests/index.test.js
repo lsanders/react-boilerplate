@@ -75,4 +75,18 @@ describe('<HomePage />', () => {
     fireEvent.submit(form);
     expect(appActions.loadRepos).toHaveBeenCalled();
   });
+
+  it('should be able to pass initial state', () => {
+    const storeFixture = configureStore({
+      home: {
+        username: 'julienben',
+      },
+    });
+    const { container } = renderHomePage(storeFixture);
+
+    store.dispatch(changeUsername('julienben'));
+
+    const input = container.querySelector('input');
+    expect(input.value).toEqual('julienben');
+  });
 });
