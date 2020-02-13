@@ -19,6 +19,7 @@ import {
 } from 'containers/App/selectors';
 import H2 from 'components/H2';
 import ReposList from 'components/ReposList';
+import StartupRace from 'components/StartupRace';
 import AtPrefix from './AtPrefix';
 import CenteredSection from './CenteredSection';
 import Form from './Form';
@@ -76,6 +77,7 @@ export default function HomePage() {
         />
       </Helmet>
       <div>
+        <StartupRace />
         <CenteredSection>
           <H2>
             <FormattedMessage {...messages.startProjectHeader} />
